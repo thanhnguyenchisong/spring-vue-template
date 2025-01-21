@@ -25,17 +25,17 @@ export default defineConfig({
     minify: 'esbuild', // Minify with 'esbuild' or 'terser'
   },
 
-  // Server configurations
-  server: {
-    port: 3000,
-    open: true, // Open the browser automatically
-    proxy: {
-      '/api': {
-        target: 'http://localhost:8080',
-        changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, ''),
-      },
-    },
-  },
+//   Server configurations
+//   server: {
+//     port: 3000,
+//     open: true, // Open the browser automatically
+//     proxy: {
+//       '/api': {
+//         target: 'http://localhost:8080',
+//         changeOrigin: true,
+//         rewrite: (path) => path.replace(/^\/api/, ''),
+//       },
+//     },
+//   },
   plugins: [vue()],
 })
